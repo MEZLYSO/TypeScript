@@ -17,4 +17,34 @@ Ofrece caracteristicas como:
   -Ofrece autocompletado y ayuda a la hora de escribir el codigo
   -Ofrece una mejor organizacion del codigo
 
+--Como instalarlo
+
+ ->Crear un proyecto
+ ->Instalar el paquete "npm install typescript"
+ ->Configurar el package.json con "tsc"
+
+
+--Conceptos basicos
+
+ ->Chequea el tipo de las variables en el codigo y manda un error si no se cumple el tipo
+ ->En tiempo real verifica el tipo de las variables
+
+--Tipos de datos
+
+  ->Numeros: "number"
+  ->Strings: "string"
+  ->Booleanos: "boolean"
+
+--Por que debemos definir tipos a las variables?
+
+ Por que a comparacion de Javascript, TypeScript es un lenguaje tipado, lo que significa que cada variable tiene un tipo
+ lo que en caso de que un valor entre en una variable que no es de su tipo, el compilador nos va a avisar permitiendonos
+ evitar errores en tiempo de ejecucion relacionados con los tipos de datos.
+
+--Inferencia de tipos
+
+En este caso no tenemos que estar definiendo el tipo de la variable, ya que TypeScript lo infiere automaticamente
+y solo nos avisa si el tipo de la variable no es el correcto.
+
+
 
