@@ -1,0 +1,20 @@
+----TypeScript----
+
+
+1.Que es?
+Es un superset de Javascript
+Esto se refiere a que es un lenguaje construido sobre Javascript agregando ciertas caracteristicas
+y funcionalidades. 
+
+2.Como funciona en el browser?
+Se termina compilando en Javascript para que pueda ser ejecutado en el navegador ya que el browser
+solo puede ejecutar Javascript
+
+3.Cuales son los beneficios?
+Ofrece caracteristicas como:
+  
+  -Agrega tipado estatico al lenguaje, lo que ofrece una vista de errores antes de ejecucion del codigo
+  -Ofrece autocompletado y ayuda a la hora de escribir el codigo
+  -Ofrece una mejor organizacion del codigo
+
+
