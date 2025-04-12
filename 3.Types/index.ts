@@ -1,4 +1,4 @@
-//Definicion por nuestra propia mano
+//Anotacion de tipos
 
 let vehiculo: string;
 let cantidad: number;
