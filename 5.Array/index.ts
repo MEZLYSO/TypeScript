@@ -13,4 +13,8 @@ hoobies = ["Correr", "Leer", "Dibujar"];
 
 let array: any[] = ["Correr", 2, true];
 
+for (const hobbie of hoobies) {
+  console.log(hobbie.toUpperCase());
+}
+
 console.log(hoobies);
