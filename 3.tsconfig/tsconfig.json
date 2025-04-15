@@ -31,7 +31,7 @@
     // Permite anexar todos los archivos de Javascript al compiador
     // "allowJs": true,                                  /* Allow JavaScript files to be a part of your program. Use the 'checkJS' option to get errors from these files. */
 
-    //--sourceMap
+    /--sourceMap
     //Nos permite depurar el codigo de TypeScript
     // Genera un archvo .map que nos permite ver el codigo de TypeScript
     // ademas de ver el codigo de JavaScript

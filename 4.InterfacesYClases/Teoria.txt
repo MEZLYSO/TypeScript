@@ -1,0 +1,1 @@
+Las interfaces on un tipo definido por nosotros
