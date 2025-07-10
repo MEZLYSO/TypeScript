@@ -1,5 +1,5 @@
-import type { Move } from "../interface/pokeapi-response.interface";
-import { PokeapiAdapter } from "../api/pokeApi.adapter";
+import type { Move, PokeapiResponse } from "../interface/pokeapi-response.interface";
+import { PokeapiAdapter, PokeapiAdapterFetch, type HttpAdapter } from "../api/pokeApi.adapter";
 
 
 export class Pokemon {
@@ -12,12 +12,12 @@ export class Pokemon {
     public readonly id: number,
     public readonly name: string,
     //Todo: inyectar depedencias 
-    private readonly http: PokeapiAdapter
+    private readonly http: HttpAdapter
   ) { }
 
   async getMoves(): Promise<Move[]> {
     // Uso de la depedencia del adapter
-    const data = await this.http.get('https://pokeapi.co/api/v2/pokemon/4')
+    const data = await this.http.get<PokeapiResponse>('https://pokeapi.co/api/v2/pokemon/4')
     console.log(data.moves);
     return data.moves
   }
@@ -34,9 +34,11 @@ export class Pokemon {
 }
 
 // Instancia del Adapter de la API
-const pokeApi = new PokeapiAdapter()
 
-export const charmander2 = new Pokemon(2, "charmander", pokeApi)
+const pokeApi = new PokeapiAdapter()
+const pokeApiFetch = new PokeapiAdapterFetch()
+
+export const charmander2 = new Pokemon(2, "charmander", pokeApiFetch)
 
 charmander2.getMoves()
 
