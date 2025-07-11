@@ -8,6 +8,10 @@ const Deprecated = (deprecationReason: string) => {
           //! Llamar la función propiamente con sus argumentos
 
           //Bloquear ejecucion
+          //
+          //o
+          //
+          //ejecucion
           // propertyDescriptor.value.apply(this, args);
         }
         return wrapperFn;
