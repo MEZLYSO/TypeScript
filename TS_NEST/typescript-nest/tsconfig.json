@@ -19,7 +19,9 @@
     "noUnusedParameters": true,
     "erasableSyntaxOnly": false,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+    // Activacion de los decoradores
+    "experimentalDecorators":true
   },
   "include": ["src"]
 }
